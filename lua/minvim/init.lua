@@ -1,5 +1,5 @@
 require("minvim.remap")
-require("minvim.packer")
+require("minvim.lazy")
 require("minvim.editor")
 require("minvim.lsp")
 require("minvim.cmp")

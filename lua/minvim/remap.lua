@@ -10,10 +10,6 @@ vim.api.nvim_set_keymap('c', '<C-j>', '<Down>', { noremap = true })
 vim.api.nvim_set_keymap('c', '<C-k>', '<Up>', { noremap = true })
 vim.api.nvim_set_keymap('c', '<C-l>', '<Right>', { noremap = true })
 
--- vim.api.nvim_set_keymap('i', '(', '()<Left>', { noremap = true })
--- vim.api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true })
--- vim.api.nvim_set_keymap('i', '[', '[]<Left>', { noremap = true })
-
 -- Commands
 vim.api.nvim_create_user_command('Vt', 'vertical terminal', {})
 vim.api.nvim_create_user_command('E', 'Ex', {})
