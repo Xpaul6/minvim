@@ -1,5 +1,12 @@
+-- Plugins
+require("minvim.plugins.lazy")
+require("minvim.plugins.cmp")
+require("minvim.plugins.lsp")
+
+-- Configs
 require("minvim.remap")
-require("minvim.lazy")
 require("minvim.editor")
-require("minvim.lsp")
-require("minvim.cmp")
+
+-- After
+require("minvim.plugins.treesitter")
+require("minvim.plugins.telescope")
