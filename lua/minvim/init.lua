@@ -6,6 +6,7 @@ require("minvim.plugins.lsp")
 -- Configs
 require("minvim.remap")
 require("minvim.editor")
+require("minvim.diagnostic")
 
 -- After
 require("minvim.plugins.treesitter")

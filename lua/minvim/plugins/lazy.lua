@@ -23,12 +23,7 @@ require("lazy").setup({
       version = "*",
       lazy = false,
     },
-    {
-      "nyoom-engineering/oxocarbon.nvim",
-      config = function()
-        vim.cmd("colorscheme oxocarbon")
-      end,
-    },
+    {"nyoom-engineering/oxocarbon.nvim"},
     {
       "nvim-telescope/telescope.nvim",
       tag = "0.1.8",
@@ -52,13 +47,10 @@ require("lazy").setup({
     { "hrsh7th/nvim-cmp" },
     { "hrsh7th/cmp-nvim-lsp" },
     { "onsails/lspkind.nvim" },
-    {
-      "L3MON4D3/LuaSnip",
-    },
+    {"L3MON4D3/LuaSnip"},
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
   },
-  install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
 })
 
