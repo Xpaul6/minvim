@@ -17,3 +17,4 @@ vim.o.hlsearch = false
 -- Behaviour
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.autoread = true
