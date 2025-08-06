@@ -11,6 +11,7 @@ mason_lspconfig.setup {
     "ts_ls",
     "pyright",
     "rust_analyzer",
+    "tailwindcss"
   },
 
   handlers = {

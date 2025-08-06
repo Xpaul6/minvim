@@ -3,6 +3,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
+vim.cmd("autocmd BufRead,BufNewFile *.js,*.ts,*.jsx,*.tsx set tabstop=2|set shiftwidth=2")
 
 -- Visuals
 vim.opt.number = true

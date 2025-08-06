@@ -47,10 +47,19 @@ require("lazy").setup({
     { "hrsh7th/nvim-cmp" },
     { "hrsh7th/cmp-nvim-lsp" },
     { "onsails/lspkind.nvim" },
-    { "L3MON4D3/LuaSnip" },
+    {
+        "L3MON4D3/LuaSnip",
+        dependencies = {
+            { "rafamadriz/friendly-snippets" }
+        },
+        config = function ()
+            require("luasnip.loaders.from_vscode").lazy_load()
+            require("luasnip").config.setup({})
+        end
+    },
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
-    { "tmux-plugins/vim-tmux-focus-events" }
+    { "tmux-plugins/vim-tmux-focus-events" },
   },
   checker = { enabled = true },
 })

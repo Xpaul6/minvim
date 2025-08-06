@@ -4,8 +4,8 @@ require("minvim.plugins.cmp")
 require("minvim.plugins.lsp")
 
 -- Configs
-require("minvim.remap")
 require("minvim.editor")
+require("minvim.remap")
 require("minvim.diagnostic")
 
 -- After
