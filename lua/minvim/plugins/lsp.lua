@@ -11,13 +11,21 @@ mason_lspconfig.setup {
     "ts_ls",
     "pyright",
     "rust_analyzer",
-    "tailwindcss"
+    "tailwindcss",
+    "emmet_ls"
   },
 
   handlers = {
     function(server_name)
       lspconfig[server_name].setup {
         capabilities = capabilities,
+      }
+    end,
+
+    emmet_ls = function()
+      lspconfig.emmet_ls.setup {
+        capabilities = capabilities,
+        filetypes = { "typescriptreact", "javascriptreact" },
       }
     end,
   },
