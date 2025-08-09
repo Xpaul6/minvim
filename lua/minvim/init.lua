@@ -11,3 +11,4 @@ require("minvim.diagnostic")
 -- After
 require("minvim.plugins.treesitter")
 require("minvim.plugins.telescope")
+
