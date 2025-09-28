@@ -19,4 +19,4 @@ vim.api.nvim_create_autocmd("filetype", {
 -- Commands
 vim.api.nvim_create_user_command('Vt', 'vertical terminal', {})
 vim.api.nvim_create_user_command('E', 'Ex', {})
-
+vim.keymap.set('n', '<leader>d', ':Gitsigns diffthis<CR><C-w>w')
