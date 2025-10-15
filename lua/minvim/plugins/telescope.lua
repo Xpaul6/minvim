@@ -4,5 +4,5 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find f
 vim.keymap.set('n', '<leader>fs', function()
     builtin.grep_string({ search = vim.fn.input("Grep >> ") })
 end)
-vim.keymap.set('n', '<leader>td', builtin.diagnostics, { desc = 'Telescope diagnostic' })
+vim.keymap.set('n', '<leader>fd', builtin.diagnostics, { desc = 'Telescope diagnostic' })
 

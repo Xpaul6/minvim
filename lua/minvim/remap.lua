@@ -6,6 +6,7 @@ vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>e', ':Ex<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('n', '<leader>t', ':tabnew<CR>')
 
 vim.api.nvim_create_autocmd("filetype", {
     pattern = "netrw",
