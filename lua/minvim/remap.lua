@@ -7,6 +7,9 @@ vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>e', ':Ex<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>t', ':tabnew<CR>')
+for i = 1, 9 do
+    vim.keymap.set('n', string.format('<leader>%d', i), string.format('%dgt', i), { noremap = true, silent = true })
+end
 
 vim.api.nvim_create_autocmd("filetype", {
     pattern = "netrw",

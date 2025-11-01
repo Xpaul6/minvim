@@ -68,7 +68,7 @@ require("lazy").setup({
 
         -- Misc
         { "tmux-plugins/vim-tmux-focus-events" },
+        { "ThePrimeagen/vim-be-good" },
     },
     checker = { enabled = true },
 })
-
