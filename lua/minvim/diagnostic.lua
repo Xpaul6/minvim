@@ -1,9 +1,6 @@
 vim.opt.updatetime = 300
 
 vim.diagnostic.config({
-    --virtual_text = {
-    --  prefix = '|', -- Could be '■', '▎', 'x', '●'
-    --},
     virtual_text = false,
     signs = true,             -- Use signs in the gutter
     underline = true,         -- Underline the erroneous text

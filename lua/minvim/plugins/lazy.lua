@@ -28,13 +28,14 @@ require("lazy").setup({
         { "nyoom-engineering/oxocarbon.nvim" },
         {
             "nvim-treesitter/nvim-treesitter",
+            branch = "main",
             build = ":TSUpdate",
         },
 
         -- Active plugins
         {
             "nvim-telescope/telescope.nvim",
-            tag = "0.1.8",
+            branch = "master",
             dependencies = {
                 { "nvim-lua/plenary.nvim" },
             },
@@ -68,7 +69,6 @@ require("lazy").setup({
 
         -- Misc
         { "tmux-plugins/vim-tmux-focus-events" },
-        { "ThePrimeagen/vim-be-good" },
     },
     checker = { enabled = true },
 })
