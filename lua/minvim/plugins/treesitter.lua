@@ -19,3 +19,9 @@ vim.api.nvim_create_autocmd("FileType", {
             "v:lua.require'nvim-treesitter'.indentexpr()"
     end,
 })
+
+vim.api.nvim_create_autocmd("LspAttach", {
+    callback = function(args)
+        vim.lsp.semantic_tokens.enable(false)
+    end,
+})
