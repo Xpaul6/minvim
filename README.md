@@ -58,6 +58,13 @@ Leader is `<Space>`, local leader is `\`.
 | `<leader>lf` | Format buffer via LSP |
 | `<leader>d` | Git diff current file (`Gitsigns diffthis`) |
 
+### LSP (buffer-local, set on attach)
+| Keybind | Action |
+| --- | --- |
+| `gd` | Jump to definition |
+| `K` | Show hover documentation |
+| `gr` | Find references |
+
 ### Telescope
 | Keybind | Action |
 | --- | --- |
